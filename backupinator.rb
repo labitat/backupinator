@@ -37,7 +37,8 @@ config["servers"].each do |server|
 				end
 			end
 		end
-		ssh.scp.download! backupdirname, "."
+		system("mkdir "+backupdirname+"-"+server["name"])
+		ssh.scp.download! backupdirname, "./"+backupdirname+"-"+server["name"]
     end
 end
 

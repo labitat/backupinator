@@ -1,0 +1,20 @@
+The backupinator
+
+== Requriments ==
+Ruby 1.9.2
+
+gems: 
+net-ssh
+net-scp
+
+== Usage ==
+
+Edit backupinator.conf (a json file) to match your needs. The output of the commands will not be preserved.
+The commands must all move the result to the backup dir.
+
+Afterwards will the backupinator move the backup dir to local server.
+
+== How to run ==
+
+ruby backupinator.rb
+
